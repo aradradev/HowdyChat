@@ -1,0 +1,32 @@
+{
+  "name": "howdychat",
+  "version": "1.0.0",
+  "description": "HowdyChat is a basic chat application with real-time messaging. Used TypeScript to define message structures and managed user interactions. Implement features such as user authentication and the ability to join different chat rooms.",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aradradev/HowdyChat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aradradev/HowdyChat/issues"
+  },
+  "homepage": "https://github.com/aradradev/HowdyChat#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.5",
+    "@types/socket.io": "^3.0.2",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "ts-node": "^10.9.2"
+  }
+}
