@@ -1,9 +1,9 @@
 export interface Message{
-    username: string,
+    username: string, //Simple Interface
     content: string,
     timestamp: number
 }
 
 export interface AuthPayload{
-    username: string
+    username: string //Not a proper authentication yet just the first version.
 }

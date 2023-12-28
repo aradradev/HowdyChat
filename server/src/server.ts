@@ -4,16 +4,20 @@ import express from 'express'
 import http from 'http'
 import {Server, Socket} from 'socket.io'
 import { AuthPayload, Message } from './types'
-import cors from 'cors'
+import cors from 'cors' //Being stuck here
 
 const app = express()
 const server = http.createServer(app)
-const io = new Server(server)
-
-app.use(cors({origin: 'http://localhost:5173', credentials: true}))
+const io = new Server(server, {
+    cors: {
+        origin: 'http://localhost:5173',
+        methods: ['GET', 'POST']
+    }
+})
 
 const PORT = 3000
 
+app.use(cors())
 app.get('/', (_req, res) => {
     res.send('Welcome to the HowdyChat application.')
 })
